@@ -1,7 +1,7 @@
 # BlazorNotification
 <p>
 	<a href="https://www.nuget.org/packages/BlazorNotification">
-	    <img src="https://buildstats.info/nuget/BlazorNotification?v=1.0.0" />
+	    <img src="https://buildstats.info/nuget/BlazorNotification?v=1.0.1" />
 	</a>
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RSE2NMEG3F7QU&source=url">
 	    <img src="https://img.shields.io/badge/Donate-PayPal-green.svg" />
@@ -13,7 +13,7 @@ Blazor browser notifications from c# without any JavaScript library or dependenc
 ## Installation
 
 ```csharp
-Install-Package BlazorNotification -Version 1.0.0
+Install-Package BlazorNotification -Version 1.0.1
 ```
 
 ## Register the service in your services method
