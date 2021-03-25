@@ -5,12 +5,13 @@
     <RazorLangVersion>3.0</RazorLangVersion>
     <Description>Blazor browser notifications from c# without any JavaScript library or dependency.</Description>
     <Copyright>Anthony G. Rivera Cosme</Copyright>
-    <RepositoryUrl>https://github.com/arivera12/BlazorNotifications</RepositoryUrl>
+    <RepositoryUrl>https://github.com/arivera12/BlazorNotification</RepositoryUrl>
     <RepositoryType>c#</RepositoryType>
-    <PackageTags>Blazor, notification, browser notifications</PackageTags>
+    <PackageTags>Blazor, notification, browser notification</PackageTags>
     <PackageReleaseNotes>initial release.</PackageReleaseNotes>
     <Authors>Anthony G. Rivera Cosme</Authors>
     <Company />
+    <PackageId>BlazorNotification</PackageId>
   </PropertyGroup>
 
 
