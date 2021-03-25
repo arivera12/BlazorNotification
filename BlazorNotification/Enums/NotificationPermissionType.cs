@@ -1,4 +1,4 @@
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     public enum NotificationPermissionType
     {

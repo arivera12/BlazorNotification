@@ -8,10 +8,15 @@
     <RepositoryUrl>https://github.com/arivera12/BlazorNotification</RepositoryUrl>
     <RepositoryType>c#</RepositoryType>
     <PackageTags>Blazor, notification, browser notification</PackageTags>
-    <PackageReleaseNotes>initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Changed namespace, renamed createasync to sendasync</PackageReleaseNotes>
     <Authors>Anthony G. Rivera Cosme</Authors>
     <Company />
     <PackageId>BlazorNotification</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/arivera12/BlazorNotification</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 
@@ -19,6 +24,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.13" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.13" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

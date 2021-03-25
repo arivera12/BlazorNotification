@@ -1,6 +1,6 @@
 using System;
 
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     /// <summary>
     /// A notification is an abstract representation of something that happened, such as the delivery of a message.

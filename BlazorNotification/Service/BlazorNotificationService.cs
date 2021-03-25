@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.Threading.Tasks;
 
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     internal class BlazorNotificationService : IBlazorNotificationService
     {
@@ -46,9 +46,9 @@ namespace BlazorNotifications
             }
         }
         /// <inheritdoc/>
-        public ValueTask CreateAsync(string title, NotificationOptions options) => JSRuntime.InvokeVoidAsync("eval", new[] { $@"new Notification('{title}', {JsonConvert.SerializeObject(options, JsonSerializerSettings)})" });
+        public ValueTask SendAsync(string title, NotificationOptions options) => JSRuntime.InvokeVoidAsync("eval", new[] { $@"new Notification('{title}', {JsonConvert.SerializeObject(options, JsonSerializerSettings)})" });
         /// <inheritdoc/>
-        public ValueTask CreateAsync(string title, string body, string icon)
+        public ValueTask SendAsync(string title, string body, string icon)
         {
             NotificationOptions options = new NotificationOptions
             {

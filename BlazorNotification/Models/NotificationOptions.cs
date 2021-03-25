@@ -1,6 +1,6 @@
 using System;
 
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     public class NotificationOptions
     {

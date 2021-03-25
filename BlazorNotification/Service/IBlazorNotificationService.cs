@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     public interface IBlazorNotificationService
     {
@@ -15,19 +15,19 @@ namespace BlazorNotifications
         /// <returns></returns>
         ValueTask<NotificationPermissionType> RequestPermissionAsync();
         /// <summary>
-        /// Create a Notification with <seealso cref="NotificationOptions"/>
+        /// Send a Notification with <seealso cref="NotificationOptions"/>
         /// </summary>
         /// <param name="title"></param>
         /// <param name="options"></param>
         /// <returns></returns>
-        ValueTask CreateAsync(string title, NotificationOptions options);
+        ValueTask SendAsync(string title, NotificationOptions options);
         /// <summary>
-        /// Create a Notification with <paramref name="title"/>, <paramref name="body"/> and <paramref name="iconUrl"/>
+        /// Send a Notification with <paramref name="title"/>, <paramref name="body"/> and <paramref name="iconUrl"/>
         /// </summary>
         /// <param name="title"></param>
         /// <param name="body"></param>
         /// <param name="iconUrl"></param>
         /// <returns></returns>
-        ValueTask CreateAsync(string title, string body, string iconUrl);
+        ValueTask SendAsync(string title, string body, string iconUrl);
     }
 }

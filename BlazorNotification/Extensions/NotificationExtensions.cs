@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BlazorNotifications
+namespace BlazorNotification
 {
     public static class NotificationExtensions
     {
