@@ -30,10 +30,10 @@ services.AddBlazorNotification();
 [Inject] IBlazorNotificationService BlazorNotificationService { get; set; }
 ```
 
-### Create a notification
+### Send a notification
 #### Using a Function (basic)
 ```csharp
-await NotificationService.CreateAsync("Title", "Description", "images/github.png");
+await NotificationService.SendAsync("Title", "Description", "images/github.png");
 ```
 
 #### Using NotificationOptions (advanced)
@@ -44,7 +44,7 @@ NotificationOptions options = new NotificationOptions
     Icon = icon,
 };
 
-await NotificationService.CreateAsync(title, options);
+await NotificationService.SendAsync(title, options);
 ```
  ### Browser Support
 ```csharp
