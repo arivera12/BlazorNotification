@@ -51,3 +51,6 @@ bool IsSupportedByBrowser = await NotificationService.IsSupportedByBrowserAsync(
 ```csharp
 PermissionType permission = await NotificationService.RequestPermissionAsync();
 ```
+
+## License
+MIT
